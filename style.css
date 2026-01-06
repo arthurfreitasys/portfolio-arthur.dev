@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    }
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inicio {
+    background-image: url(/img-font/fundos/fundo-azul-inicio.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+li, a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    font-style: italic;
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3px 5% ;
+    background-color: white;
+}
+
+.button {
+    margin-right: auto;
+}
+
+.botao-alterar-tema {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.links-nav {
+    list-style: none;
+}
+
+.links-nav li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.links-nav li a {
+    transition: all 0.3s ease 0s;
+}
+
+.links-nav li a:hover {
+    color: #0A6ADB;
+}
+
+.conteudo-inicio {
+    display: flex;
+    align-items: center;
+    padding: 150px 5%;
+}
+
+.texto-central-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desenho-inicio {
+    margin-left: auto;
+    align-items: center;
+}
+
+.sociais-logos {
+    display: flex;
+}
+
+.texto-central-inicio h2 {
+    font-size: 5vh;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 5px;
+}
+
+.texto-central-inicio h1 {
+    font-size: 10vh;
+    font-weight: bold;
+}
+
+
+
+
