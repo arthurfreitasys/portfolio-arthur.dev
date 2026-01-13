@@ -128,10 +128,14 @@ header {
     align-items: center;
 }
 
-.sociais-logos  {
-    display: flex;
+.sociais-logos img {
+    transition: transform 0.3s ease;
 }
 
+.sociais-logos img:hover {
+    transform: scale(1.05);
+    transform: translateY(-6px);
+}
 
 .texto-central-inicio h2 {
     font-size: 5vh;
