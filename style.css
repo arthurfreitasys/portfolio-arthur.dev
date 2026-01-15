@@ -63,7 +63,11 @@ header {
     box-shadow:inset 0px 5px 15px rgba(0,0,0,0.4), 
                 inset 0px -5px 15px rgba(255,255,255,0.4);
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.3s ease;
+}
+
+.button label:hover {
+    transform: scale(1.05)
 }
 
 .button label:after{
@@ -150,7 +154,6 @@ header {
 }
 
 .conteudo-sobre {
-    opacity: 100;
     background-image: url(/img-font/fundos/fundo-sobremim.jpg);
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -189,6 +192,7 @@ header {
     background-image: url(/img-font/fundos/fundo-habilidades.jpg);
     min-height: 100vh;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction:column;    
     justify-content:start;
@@ -221,8 +225,6 @@ header {
     gap: 100px;
 }
 
-
-
 .skills {
     display: flex;
     align-items: center;
@@ -244,7 +246,6 @@ header {
     transform: translateY(-6px);
 }
 
-
 .skills figcaption {
     margin-top: 10px;
     padding: 6px 18px;
@@ -263,4 +264,92 @@ header {
     opacity: 1;
     transform: scale(1.05);
     filter: brightness(1.1);
+}
+
+.conteudo-projetos {
+    background-image: url(/img-font/fundos/fundo-projetos.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+
+.texto-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.texto-projetos h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.bloco-proj {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px;
+    padding: 50px 80px;
+}
+
+.card-projeto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    color: white;
+    border-radius: 20px;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+}
+
+.img-proj {
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+.card-projeto h2 {
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card-projeto p {
+    font-size: 18px;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+.tecnologias {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.tecnologias img {
+    width: 30px;
+}
+
+.btn-github {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.btn-github:hover {
+    background-color: black;
+    transform: scale(1.1);
 }
