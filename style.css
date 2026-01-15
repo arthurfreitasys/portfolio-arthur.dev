@@ -353,3 +353,35 @@ header {
     background-color: black;
     transform: scale(1.1);
 }
+
+.rodape {
+    background-image: url(/img-font/fundos/fundo-rodape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.rodape img {
+    width: 100px;
+}
+
+.links-rodape a, li{
+    font-weight: 200;
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    padding:  10px;
+    transition: transform 0.3s ease;
+}
+
+.links-rodape a:hover {
+    filter: brightness(1.1);
+    color: black;
+}
