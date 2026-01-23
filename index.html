@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Arthur Silva</title>
+    <title>Desenvolvedor | Arthur Silva</title>
     <link rel="shortcut icon" href="/img-font/logos/desenho 1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body> 
+
     <header>
-        <div class="button"> 
-        <a href="#inicio"><img class="logo-arthur-dev" src="/img-font/logos/logopreta.png" alt="logo-arthur-dev"></a>
-            <input type="checkbox" id="botao-alterar-tema">
+        <div class="button-logo"> 
+        <a href="#inicio">
+            <img class="logo-arthur-dev" src="/img-font/logos/logopreta.png" alt="logo-arthur-dev">
+        </a>
+            <input type="checkbox" id="botao-alterar-tema" class="botao-alterar-tema">
             <label for="botao-alterar-tema"></label>
         </div>
-        <nav>
+        <nav class="nav-header">
          <ul class="links-nav">
         <li><a href="#sobre-mim">Sobre</a></li>
        <li><a href="#habilidades">Habilidades</a></li>
        <li><a href="#projetos">Projetos</a></li>
          </ul>
         </nav>
+        
     </header>
+
     <section class="conteudo-inicio" id="inicio">
     <div class="texto-central-inicio">
         <h2>Olá, eu sou o</h2>
         <h1>Arthur.</h1>
         <div class="sociais-logos">
-        <a href="https://github.com/arthurfreitasys"><img src="/img-font/logos/botao/cta-1.png" alt="Github"></a>
-        <a href="/img-font/ARTHUR_SILVA_CURRICULO.pdf"><img src="/img-font/logos/botao/cta-2.png" alt="Download Curriculo"></a>
-        <a href="https://www.linkedin.com/in/arthurfreitasys/"><img src="/img-font/logos/botao/cta.png" alt="Linkedin"></a>
+        <button><a href="https://github.com/arthurfreitasys"><img src="/img-font/logos/botao/cta-1.png" alt="Github"></a></button>
+        <button><a href="/img-font/ARTHUR_SILVA_CURRICULO.pdf"><img src="/img-font/logos/botao/cta-2.png" alt="Download Curriculo"></a></button>
+        <button><a href="https://www.linkedin.com/in/arthurfreitasys/"><img src="/img-font/logos/botao/cta.png" alt="Linkedin"></a></button>
         </div>
     </div>
     <div class="desenho-inicio">
         <img src="/img-font/logos/desenhao.png" alt="Desenho do Arthur">
     </div>
-</section>
+    </section>
 
-<section class="conteudo-sobre" id="sobre-mim">
+    <section class="conteudo-sobre" id="sobre-mim">
 <img src="/img-font/foto-sobremim.png" alt="foto-pessoal-arthur">
 <div class="texto-sobremim">
 <h1>Sobre mim</h1>
@@ -46,9 +51,9 @@
 Tenho conhecimento em linguagem C, além de já ter desenvolvido projetos utilizando HTML e CSS. Também possuo inglês intermediário e experiência com edição de vídeo.
 </p>
 </div>
-</section>
+    </section>
 
-<section class="conteudo-habilidades" id="habilidades">
+    <section class="conteudo-habilidades" id="habilidades">
     <div class="texto-habilidades">
         <h1>Habilidades</h1>
         <h2>Desenvolvidas durante o curso de ADS e</h2>
@@ -90,9 +95,9 @@ Tenho conhecimento em linguagem C, além de já ter desenvolvido projetos utiliz
     </figure>
     </div>
 
-</section>
+    </section>
 
-<section class="conteudo-projetos" id="projetos">
+    <section class="conteudo-projetos" id="projetos">
     <div class="texto-projetos">
     <h1>Projetos</h1>
     </div>
@@ -128,9 +133,9 @@ Tenho conhecimento em linguagem C, além de já ter desenvolvido projetos utiliz
        <a href="https://github.com/arthurfreitasys/portfolio-arthur.dev"><img src="/img-font/logos/github-logo.png" width="35px" alt="Github" class="btn-github"></a>
         </article>
         </div>
-</section>
+    </section>
 
-<footer class="rodape">
+    <footer class="rodape">
     <a href="#inicio"><img src="/img-font/logos/logo-dev-branca.png" alt="Logo Arthur Dev"></a>
     <nav class="links-rodape">
          <ul>
@@ -139,7 +144,7 @@ Tenho conhecimento em linguagem C, além de já ter desenvolvido projetos utiliz
        <li><a href="#projetos">Projetos</a></li>
          </ul>
         </nav>
-</footer>
+    </footer>
 
 </body>
 </html>

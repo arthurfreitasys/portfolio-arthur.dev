@@ -12,7 +12,7 @@
 }
 
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .conteudo-inicio {
@@ -20,17 +20,16 @@ body::-webkit-scrollbar {
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-     display: flex;
+    display: flex;
     align-items: center;
-    padding: 150px 5%;
+    padding: 5%;
 }
-
 
 li, a {
     font-family: "Roboto", sans-serif;
     font-weight: 450;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: none;
     color: black;
 }
@@ -42,74 +41,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 5% ;
+    padding: 0.3% 10%;
     background-color: white;
 }
 
-.button {
+.button-logo {
     display: flex;
-    align-items: center;
-    gap: 5px;
-    margin: auto 60px;
-}
-
-.button label {
-    width: 50px;
-    height: 25px;
-    position: relative;
-    display: block;
-    background-color: #1278F1;
-    border-radius: 200px;
-    box-shadow:inset 0px 5px 15px rgba(0,0,0,0.4), 
-                inset 0px -5px 15px rgba(255,255,255,0.4);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.button label:hover {
-    transform: scale(1.05)
-}
-
-.button label:after{
-    content: "";
-    width: 22px;
-    height: 20px;
-    position: absolute;
-    top: 2.5px;
-    left: 2px;
-    background: linear-gradient(180deg, white, #4193F4);
-    border-radius: 180px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
-    transition: 0.3s;
-}
-
-.button input {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-
-.button input:checked + label {
-    background: #4b44e2;
-}
-
-.button input:checked + label:after {
-    left: 48px;
-    transform: translateX(-100%);
-    background: linear-gradient(180deg, #2B2B2B, #4b44e2);
-}
-
-.button label:active::after {
-    width: 28px;
-}
-
-.links-nav {
-    list-style: none;
-}
-
-.links-nav li {
-    display: inline-block;
-    padding: 0px 15px;
+    flex-direction: row;
+    gap: 8%;
 }
 
 .links-nav li a {
@@ -132,6 +71,16 @@ header {
     align-items: center;
 }
 
+.sociais-logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.sociais-logos button, a {
+    background: none;
+    border: none;
+}
+
 .sociais-logos img {
     transition: transform 0.3s ease;
 }
@@ -152,6 +101,8 @@ header {
     font-size: 10vh;
     font-weight: bold;
 }
+
+
 
 .conteudo-sobre {
     background-image: url(/img-font/fundos/fundo-sobremim.jpg);
@@ -188,6 +139,7 @@ header {
     font-weight: 300;
 }
 
+
 .conteudo-habilidades {
     background-image: url(/img-font/fundos/fundo-habilidades.jpg);
     min-height: 100vh;
@@ -195,7 +147,6 @@ header {
     background-size: cover;
     display: flex;
     flex-direction:column;    
-    justify-content:start;
     align-items: center;
 }
 
@@ -203,17 +154,17 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 5%;
     color: white;
 }
 
 .texto-habilidades h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: bold;
 }
 
 .texto-habilidades h2 {
-    font-size: 30px;
+    font-size: 1.85rem;
     font-weight: 300;
 }
 
@@ -288,7 +239,7 @@ header {
 
 .bloco-proj {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
     gap: 50px;
     padding: 50px 80px;
 }
@@ -384,4 +335,161 @@ header {
 .links-rodape a:hover {
     filter: brightness(1.1);
     color: black;
+}
+
+@media (max-width:768px) {
+
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+    .links-nav{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .links-nav li, a {
+        font-size: 1.33rem;
+    }
+
+    .logo-arthur-dev {
+        width: 120px;
+        margin-top: 8px;       
+    }
+
+    .botao-alterar-tema {
+        display: none;
+    }
+
+    .conteudo-inicio {
+    margin: 60px 10px;
+        background-size: cover;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    .desenho-inicio {
+        display: none;
+    }
+
+    .conteudo-sobre {
+        background: none;
+        background-color: #4193F4;
+        display: flex;
+        flex-direction: column;
+        min-height: 100dvh;
+
+    }
+
+    .conteudo-sobre img {
+        margin: 50px;
+    width: 30vh;
+}
+
+    .texto-sobremim {
+    margin: 50px 5px;
+    color: white;
+    gap: 10px;
+    }
+
+    .conteudo-sobre h1 {
+        font-size: 3.2rem;
+    font-weight: bold;
+    }
+
+    .conteudo-sobre p {
+    font-size: 1.5rem;
+    }
+    
+    .conteudo-habilidades {
+        background-image: none;
+        background-color: #4193F4;
+        padding: 5%;
+    }
+
+    .texto-habilidades h1 {
+        font-size: 3.2rem;
+    }
+
+     .texto-habilidades {
+        text-align: center;
+    }
+
+    .texto-habilidades h2 {
+        font-size: clamp(1.22rem, 4vw, 1.4rem);
+        line-height: 1;
+        max-width: 80%;
+    }
+
+    .icones-habilidades {
+    display: grid;
+    padding: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 80px;
+    }
+
+    .conteudo-projetos {
+        background-image: none;
+        background-color: #4193F4;
+        min-height: 100dvh;
+    }
+
+    .conteudo-projetos h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2rem;
+    }
+
+    .card-projeto {
+        padding: 30px 40px;
+    }
+
+.img-proj {
+    width: 35vh;    
+}
+
+    .bloco-proj {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    padding: 30px 0px;
+    }
+
+    .rodape {
+        background: none;
+        background-color: #4193F4;
+        min-height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+    } 
+
+    .rodape img {
+    width: 120px;
+    }
+
+    .links-rodape ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .links-rodape a, li {
+        font-size: 1.3rem;
+
+    }
 }
