@@ -102,8 +102,6 @@ header {
     font-weight: bold;
 }
 
-
-
 .conteudo-sobre {
     background-image: url(/img-font/fundos/fundo-sobremim.jpg);
     min-height: 100vh;
@@ -491,5 +489,158 @@ header {
     .links-rodape a, li {
         font-size: 1.3rem;
 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .links-nav{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .links-nav li, a {
+        font-size: 1.5rem;
+    }
+
+    .logo-arthur-dev {
+        width: 150px;
+        margin-top: 8px;       
+    }
+
+    .botao-alterar-tema {
+        display: none;
+    }
+
+    .desenho-inicio {
+        display: none;
+    }
+
+     .conteudo-inicio {
+        background-size: cover;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+
+        .conteudo-sobre {
+        background: none;
+        background-color: #4193F4;
+        display: flex;
+        flex-direction: column;
+        min-height: 100dvh;
+    }
+
+    .conteudo-sobre img {
+        margin: 50px;
+        width: 32vh;
+}
+
+    .texto-sobremim {
+    margin: 50px 5px;
+    color: white;
+    gap: 10px;
+    }
+
+    .conteudo-sobre h1 {
+        font-size: 3.5rem;
+    font-weight: bold;
+    }
+
+    .conteudo-sobre p {
+    font-size: 2.2em;
+    }
+
+     .conteudo-habilidades {
+        background-image: none;
+        background-color: #4193F4;
+        padding: 15%;
+    }
+
+    .texto-habilidades h1 {
+        font-size: 3.5rem;
+    }
+
+     .texto-habilidades {
+        text-align: center;
+    }
+
+    .texto-habilidades h2 {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .icones-habilidades {
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 80px;
+    }
+
+     .conteudo-projetos {
+        background-image: none;
+        background-color: #4193F4;
+        min-height: 100dvh;
+    }
+
+    .conteudo-projetos h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    }
+
+    .bloco-proj {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    padding: 30px 0px;
+    }
+
+    .card-projeto h2 {
+        font-size: 1.75rem;
+    }
+
+    .card-projeto p {
+        font-size: 1.2rem;
+    }
+
+    .rodape {
+        background: none;
+        background-color: #4193F4;
+        min-height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+    } 
+
+    .rodape img {
+    width: 150px;
+    }
+
+    .links-rodape ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .links-rodape a, li {
+        font-size: 1.55rem;
     }
 }
