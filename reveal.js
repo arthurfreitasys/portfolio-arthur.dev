@@ -6,11 +6,6 @@ revelar.reveal('.efeito-texto-inicio',{
     origin: 'left'
 })
 
-revelar.reveal('.efeito-img-inicio',{
-    duration: 1500,
-    distance: '90px',
-    origin: 'right'
-})
 
 
 revelar.reveal('.conteudo-sobre img', {

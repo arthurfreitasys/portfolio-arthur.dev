@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 }
 
 .conteudo-inicio {
-    background-image: url(/img-font/fundos/fundo-azul-inicio.png);
+    background-image: url(img-font/fundos/fundo-azul-inicio.png);
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@ header {
     color: #0A6ADB;
 }
 
-.efeito-texto-inicio, .efeito-img-inicio {
+.efeito-texto-inicio {
     visibility: hidden;
 }
 
@@ -107,7 +107,7 @@ header {
 }
 
 .conteudo-sobre {
-    background-image: url(/img-font/fundos/fundo-sobremim.jpg);
+    background-image: url(img-font/fundos/fundo-sobremim.jpg);
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,7 +151,7 @@ header {
 
 
 .conteudo-habilidades {
-    background-image: url(/img-font/fundos/fundo-habilidades.jpg);
+    background-image: url(img-font/fundos/fundo-habilidades.jpg);
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,7 +232,7 @@ header {
 }
 
 .conteudo-projetos {
-    background-image: url(/img-font/fundos/fundo-projetos.jpg);
+    background-image: url(img-font/fundos/fundo-projetos.jpg);
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -324,7 +324,7 @@ header {
 }
 
 .rodape {
-    background-image: url(/img-font/fundos/fundo-rodape.jpg);
+    background-image: url(img-font/fundos/fundo-rodape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 20vh;
