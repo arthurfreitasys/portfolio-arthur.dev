@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvedor | Arthur Silva</title>
-    <link rel="shortcut icon" href="/img-font/logos/desenho 1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img-font/logos/desenho 1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -14,24 +14,26 @@
 
     <header>
         <div class="button-logo"> 
-        <a href="#inicio">
+        <a href="#conteudoinicio">
             <img class="logo-arthur-dev" src="img-font/logos/logopreta.png" alt="logo-arthur-dev">
         </a>
-            <input type="checkbox" id="botao-alterar-tema" class="botao-alterar-tema">
-            <label for="botao-alterar-tema"></label>
+        <div class="trilho" id="trilho">
+            <div class="indicador" id="indicador"></div>
         </div>
+        </div>
+        
         <nav class="nav-header">
          <ul class="links-nav">
-        <li><a href="#sobre-mim">Sobre</a></li>
-       <li><a href="#habilidades">Habilidades</a></li>
-       <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#conteudosobre">Sobre</a></li>
+       <li><a href="#conteudohabilidades">Habilidades</a></li>
+       <li><a href="#conteudoprojetos">Projetos</a></li>
          </ul>
         </nav>
         
     </header>
 
-    <section class="conteudo-inicio" id="inicio">
-    <div class="texto-central-inicio efeito-texto-inicio">
+    <section class="conteudoinicio" id="conteudoinicio">
+    <div class="textocentralinicio efeito-texto-inicio" id="textocentralinicio">
         <h2>Olá, eu sou o</h2>
         <h1>Arthur.</h1>
         <div class="sociais-logos">
@@ -40,14 +42,14 @@
         <button><a href="https://www.linkedin.com/in/arthurfreitasys/"><img src="img-font/logos/botao/cta.png" alt="Linkedin"></a></button>
         </div>
     </div>
-    <div class="desenho-inicio efeito-img-inicio">
+    <div class="desenhoinicio efeito-img-inicio" id="desenhoinicio">
         <img src="img-font/logos/desenhao.png" alt="Desenho do Arthur">
     </div>
     </section>
 
-    <section class="conteudo-sobre" id="sobre-mim">
+    <section class="conteudosobre" id="conteudosobre">
 <img src="img-font/foto-sobremim.png" alt="foto-pessoal-arthur">
-<div class="texto-sobremim efeito-txt-sobre">
+<div class="textosobremim efeito-txt-sobre" id="textosobremim">
 <h1>Sobre mim</h1>
 <p>Sou estudante de Análise e Desenvolvimento de Sistemas cursando o 3º semestre na FATEC, em busca da primeira oportunidade como Dev. <br> Sou uma pessoa proativa, curiosa e comprometida com o aprendizado contínuo, sempre em busca de aprimorar minhas habilidades.
 Tenho conhecimento em linguagem C, além de já ter desenvolvido projetos utilizando HTML e CSS. Também possuo inglês intermediário e experiência com edição de vídeo.
@@ -55,7 +57,7 @@ Tenho conhecimento em linguagem C, além de já ter desenvolvido projetos utiliz
 </div>
     </section>
 
-    <section class="conteudo-habilidades" id="habilidades">
+    <section class="conteudohabilidades" id="conteudohabilidades">
     <div class="texto-habilidades efeito-txt-habilidades">
         <h1>Habilidades</h1>
         <h2>Desenvolvidas durante o curso de ADS e</h2>
@@ -99,7 +101,7 @@ Tenho conhecimento em linguagem C, além de já ter desenvolvido projetos utiliz
 
     </section>
 
-    <section class="conteudo-projetos" id="projetos">
+    <section class="conteudoprojetos" id="conteudoprojetos">
     <div class="texto-projetos efeito-txt-projetos">
     <h1>Projetos</h1>
     </div>
@@ -137,16 +139,17 @@ Tenho conhecimento em linguagem C, além de já ter desenvolvido projetos utiliz
         </div>
     </section>
 
-    <footer class="rodape">
-    <a href="#inicio"><img src="img-font/logos/logo-dev-branca.png" alt="Logo Arthur Dev"></a>
+    <footer class="rodape" id="rodape">
+    <a href="#conteudoinicio"><img src="img-font/logos/logo-dev-branca.png" alt="Logo Arthur Dev"></a>
     <nav class="links-rodape">
          <ul>
-        <li><a href="#sobre-mim">Sobre</a></li>
-       <li><a href="#habilidades">Habilidades</a></li>
-       <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#conteudosobre">Sobre</a></li>
+       <li><a href="#conteudohabilidades">Habilidades</a></li>
+       <li><a href="#conteudoprojetos">Projetos</a></li>
          </ul>
         </nav>
     </footer>
 
+    <script src="togglemode.js" ></script>
 </body>
 </html>

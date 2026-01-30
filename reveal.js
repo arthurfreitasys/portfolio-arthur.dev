@@ -8,7 +8,7 @@ revelar.reveal('.efeito-texto-inicio',{
 
 
 
-revelar.reveal('.conteudo-sobre img', {
+revelar.reveal('.conteudosobre img', {
     duration: 2000,
     distance: '90px',
     origin: 'left'
