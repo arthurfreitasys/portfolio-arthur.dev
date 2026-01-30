@@ -61,6 +61,28 @@ header {
     background-color: white;
 }
 
+.menu-hamburguer {
+    width: 30px;
+    height: 22px;
+    background: none;
+    border: none;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.menu-hamburguer span {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
 .button-logo {
     display: flex;
     justify-content: center;
@@ -443,6 +465,65 @@ header {
         align-items: center;
         justify-content: space-between;
         padding: 8px;
+    }
+
+.trilho{
+    width: 10vh;
+    height: 5vh;
+}
+
+.trilho .indicador{
+    width:  5vh;
+    height: 5vh;
+}
+
+.trilho.dark .indicador {
+   left: 2.65vh;
+}
+
+    .nav-header {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: white;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.nav-header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-header.active {
+    max-height: 200px;
+}
+
+    .menu-hamburguer {
+        display: block;
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    }
+
+    .menu-hamburguer.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-hamburguer.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamburguer.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+    .nav-header.active {
+        display: block;
     }
 
     .links-nav{
