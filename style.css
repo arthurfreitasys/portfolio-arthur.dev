@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
 
 .conteudoinicio.dark {
     background-color: #2B2B2B;
-    background-image: url(/img-font/fundos/fundo-inicio-dark.png);
+    background-image: url(img-font/fundos/fundo-inicio-dark.png);
 }
 
 .conteudoinicio.dark h1 {
