@@ -52,4 +52,4 @@ Projeto desenvolvido para apresentar minhas habilidades, experiências e identid
 
 Você pode acessar o repositório por aqui:
 
-[portfolio-arthur.dev](https://github.com/arthurfreitasys/portfolio-arthur.dev)
+[portfolio-arthur.dev](https://arthurfreitasys.github.io/portfolio-arthur.dev/)
